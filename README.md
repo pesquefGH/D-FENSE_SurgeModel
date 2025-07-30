@@ -2,9 +2,9 @@
 
 1) D-FENSE (Dynamics for Epidemic Surveillance and Evaluation)
 
-Paulo Antonio Andrade Esquef (National Laboratory for Scientific Reearch)
+Paulo Antonio Andrade Esquef (National Laboratory for Scientific Computing)
 
-Add other tem members 
+Add other team members 
 
 
 2) Repository Structure
