@@ -231,19 +231,20 @@ q90=forecast_cases_q90(1+(1:52));     % 90% percentile  forecast
 q95=forecast_cases_q95(1+(1:52));     % 95% percentile forecast  
 q97p5=forecast_cases_q97p5(1+(1:52));     % 97.5% percentile  forecast
 
-LB95=q2p5;
-UB95=q97p5;
-LB90=q5;
-UB90=q95;
-LB80=q10;
-UB80=q90;
-LB50=q25;
-UB50=q75;
+lower_95=q2p5;
+upper_95=q97p5;
+lower_90=q5;
+upper_90=q95;
+lower_80=q10;
+upper_80=q90;
+lower_50=q25;
+upper_50=q75;
+pred=median_cases;
+date=repmat('2025-08-01',52,1);
 
-T = table(epiweek,median_cases,LB95,UB95,LB90,UB90,LB80,UB80,LB50,UB50);
 
+T = table(lower_95,lower_90,lower_80,lower_50,pred,upper_50,upper_80,upper_90,upper_95,date);
 
-%T = table(epiweek,cases,median_cases,q2p5,q5,q10,q25,q75,q90,q95,q97p5);
 
 writetable(T,['..\planilhas\validation_2_Surge_Model_',UF,'.csv'],'Delimiter',',')
 
