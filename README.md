@@ -31,13 +31,22 @@ DFense_SurgeModel:  dengue cases prediction based on na average surge model
 
       |_ plots: stores PDF files, one for each state, with 4 subplots related to predictions of dengue cases: median prediction, 50%, 80%, 90%, and 95% preduction intervals.
 
-  |_ validation3:  material related to validation 2 challenge
+  |_ validation3:  material related to validation 3 challenge
 
       |_ matlab: Matlab scritps needed to run (run_batch_v3_predictor_Surge_Model.m) the simulation and generate the CSV and PDF files, related to dengue case predictions for each state. CSV files are stored in planilhas and related plots (in PDF) are stored in plots  
 
       |_ planilhas: stores CSV files, one for each state, with predictions of dengue cases
   
       |_ plots: stores PDF files, one for each state, with 4 subplots related to predictions of dengue cases: median prediction, 50%, 80%, 90%, and 95% preduction intervals.
+
+|_ forecast26:  material related dengue forecast cases for season 2026
+
+      |_ matlab: Matlab scritps needed to run (run_batch_forecast26_Surge_Model.m) the simulation and generate the CSV and PDF files, related to dengue case predictions for each state. CSV files are stored in planilhas and related plots (in PDF) are stored in plots  
+
+      |_ planilhas: stores CSV files, one for each state, with predictions of dengue cases
+  
+      |_ plots: stores PDF files, one for each state, with 4 subplots related to predictions of dengue cases: median prediction, 50%, 80%, 90%, and 95% preduction intervals.
+
 
 
 3) Libraries and Dependencies
